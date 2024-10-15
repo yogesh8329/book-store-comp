@@ -6,6 +6,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { AuthModule } from './auth/auth.module';
 import { UserModule } from './user/user.module';
+import { PublicModule } from './public/public.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UserModule } from './user/user.module';
     BrowserModule,
     AppRoutingModule ,
     AuthModule,
-    UserModule // Ensure AppRoutingModule is imported here
+    UserModule,
+    PublicModule // Ensure AppRoutingModule is imported here
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
   providers: [],

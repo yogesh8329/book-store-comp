@@ -1,4 +1,15 @@
-<!-- app.component.html -->
-<div><P>header of app</P></div>
+<div>
+  <p>Header of app</p>
+</div>
 <router-outlet></router-outlet>
-<div>footer of app</div>
+<div>Footer of app</div>
+
+<div id="ROUTER">
+  <a routerLink="/about-us">About Us</a>
+  <a routerLink="/how-it-works">How It Works</a>
+  <!-- Corrected queryParams binding -->
+  <a routerLink="/auth/login" [queryParams]="{name: 'yogesh',  email:email}">Login </a>
+  <a routerLink="/public/allbooks">All Books</a>
+  <a [routerLink]="['/public/book-details', 1, 'auther', 100]">Book Details (with author)</a>
+  <a [routerLink]="['/public/book-details', 1, 'auther', 200]">Book Details (without author ID)</a>
+</div>
